@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+
+<h1>TABLA DE MULTIPLICACION DEL 5 (usando for) </h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");     
+    }  
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var multiplicador =  1;
+
+     imprimir("WHILE");
+
+    while(multiplicador <= 12) {
+
+      imprimir ( 5 * multiplicador);
+      multiplicador = multiplicador + 1 ;
+    }
+
+    imprimir ("FOR");
+
+    for (var multiplicador = 1; multiplicador <= 10 ; multiplicador++ ){
+
+      //Podemos remplazar multiplicador = multiplicador+1 por multiplicador++ y es lo mismo.
+
+      imprimir(5 * multiplicador);
+    }
+     
+</script>
